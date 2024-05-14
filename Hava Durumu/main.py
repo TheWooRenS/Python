@@ -2,10 +2,10 @@ import customtkinter
 import weather
 import texts
 
-customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
-customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
+customtkinter.set_appearance_mode("System") 
+customtkinter.set_default_color_theme("blue") 
 
-app = customtkinter.CTk()  # create CTk window like you do with the Tk window
+app = customtkinter.CTk() 
 windowWidth = app.winfo_screenwidth()
 windowHeight = app.winfo_screenheight()
 x = (windowWidth - 400) // 2
@@ -13,7 +13,7 @@ y = (windowHeight - 600) // 2
 app.geometry(f"{400}x{600}+{x}+{y}")
 app.title("Hava Durumu Uygulaması")
 
-combobox_var = customtkinter.StringVar(value=texts.comboboxtext)  # set initial value
+combobox_var = customtkinter.StringVar(value=texts.comboboxtext)  
 
 def combobox_callback(choice):
     statusLabel.configure(text=weather.Weather.get_weather(choice))
