@@ -1,0 +1,1 @@
+Projeyi indirdiğinizde client.py dosyası ile database.sqlite dosyasını aynı dizide çalıştırmanız gerekiyor
